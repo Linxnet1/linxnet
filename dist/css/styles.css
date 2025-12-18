@@ -89,6 +89,18 @@
   :root {
     scroll-behavior: smooth;
   }
+
+  /* Fix para overflow horizontal en mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+  
 }
 
 body {
@@ -11079,6 +11091,12 @@ header.masthead .masthead-heading {
   content: "";
   background-color: #e9ecef;
 }
+
+@media (max-width: 767px) {
+  .timeline:before {
+    left: 20px; /* Reduce el margen izquierdo en móvil */
+  }
+}
 .timeline > li {
   position: relative;
   min-height: 50px;
@@ -11098,17 +11116,12 @@ header.masthead .masthead-heading {
   padding: 0 20px 0 100px;
   text-align: left;
 }
-.timeline > li .timeline-panel:before {
-  right: auto;
-  left: -15px;
-  border-right-width: 15px;
-  border-left-width: 0;
-}
-.timeline > li .timeline-panel:after {
-  right: auto;
-  left: -14px;
-  border-right-width: 14px;
-  border-left-width: 0;
+
+@media (max-width: 767px) {
+  .timeline > li .timeline-panel {
+    padding: 0 15px 0 70px; /* Reduce padding en móvil */
+    width: calc(100% - 10px); /* Evita desbordamiento */
+  }
 }
 .timeline > li .timeline-image {
   position: absolute;
@@ -11123,10 +11136,20 @@ header.masthead .masthead-heading {
   border-radius: 100%;
   background-color: #ca2f3c;
 }
-.timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
-  font-size: 10px;
-  line-height: 14px;
-  margin-top: 12px;
+
+@media (max-width: 767px) {
+  .timeline > li .timeline-image {
+    width: 50px; /* Reduce tamaño en móvil */
+    height: 50px;
+    left: 0;
+  }
+  
+  .timeline > li .timeline-image h4,
+  .timeline > li .timeline-image .h4 {
+    font-size: 8px;
+    line-height: 10px;
+    margin-top: 8px;
+  }
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
