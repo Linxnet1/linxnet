@@ -11358,27 +11358,3 @@ header.masthead .masthead-heading {
     font-size: 2rem;
     line-height: 1.2;
   }
-
-/* FIX TIMELINE MOBILE */
-@media (max-width: 768px) {
-
-  .timeline > li,
-  .timeline > li.timeline-inverted {
-    float: none;
-    clear: both;
-  }
-
-  .timeline > li > .timeline-panel {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .timeline > li > .timeline-image {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-  }
-}
