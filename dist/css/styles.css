@@ -11349,4 +11349,14 @@ section#contact form#contactForm :-ms-input-placeholder {
 #mainNav {
     background-color: #212529;
 }
+/* Ajuste SOLO del título principal del masthead */
+header.masthead .masthead-heading {
+  font-size: 2.5rem;
+}
+@media (max-width: 768px) {
+  header.masthead .masthead-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
 
