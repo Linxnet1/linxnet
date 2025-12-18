@@ -11381,3 +11381,23 @@ header.masthead .masthead-heading {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 768px) {
+
+  .timeline > li.timeline-end::after {
+    display: none;
+  }
+
+  .timeline > li.timeline-end ~ li {
+    display: none;
+  }
+
+  .timeline:before {
+    height: calc(100% - 120px);
+  }
+}
+.coverage-slogan {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+}
