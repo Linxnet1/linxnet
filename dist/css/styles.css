@@ -11349,3 +11349,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 #mainNav {
     background-color: #212529;
 }
+.text-uppercase {
+  font-size: 0.85rem !important;
+}
