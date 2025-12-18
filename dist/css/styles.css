@@ -11098,6 +11098,7 @@ header.masthead .masthead-heading {
   }
 }
 .timeline > li {
+  padding-left: 0;
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
