@@ -11259,6 +11259,18 @@ header.masthead .masthead-heading {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+
+  
+  /* Ajuste de espacio entre icono y texto del timeline */
+.timeline > li .timeline-panel {
+  padding-left: 70px;
+}
+/* Evitar desplazamiento lateral en items invertidos */
+.timeline > li.timeline-inverted .timeline-panel {
+  padding-left: 70px;
+}
+
+  
 }
 .team-member {
   margin-bottom: 3rem;
@@ -11357,6 +11369,10 @@ header.masthead .masthead-heading {
   header.masthead .masthead-heading {
     font-size: 2rem;
     line-height: 1.2;
+    .timeline > li .timeline-panel {
+  padding-left: 60px;
+}
+
   }
   /* Quitar padding lateral en items invertidos */
 .timeline > li.timeline-inverted {
