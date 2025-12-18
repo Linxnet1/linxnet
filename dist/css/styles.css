@@ -11366,11 +11366,11 @@ header.masthead .masthead-heading {
   font-size: 2.5rem;
 }
 @media (max-width: 768px) {
+   .timeline > li .timeline-panel {
+  padding-left: 60px;
   header.masthead .masthead-heading {
     font-size: 2rem;
-    line-height: 1.2;
-    .timeline > li .timeline-panel {
-  padding-left: 60px;
+    line-height: 1.2;   
 }
 
   }
