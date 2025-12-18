@@ -11360,11 +11360,11 @@ header.masthead .masthead-heading {
   }
   /* Quitar padding lateral en items invertidos */
 .timeline > li.timeline-inverted {
-  padding-left: 3;
+  padding-left: 0;
   padding-right: 0;
 }
 .timeline > li.timeline-inverted .timeline-panel {
-  padding-left: 0;
+  padding-left: 2;
   padding-right: 0;
 }
 
