@@ -11388,10 +11388,11 @@ header.masthead .masthead-heading {
 /* ============================= */
 @media (max-width: 768px) {
 
-  /* Mantener la línea centrada */
+  /* OCULTAR línea vertical del timeline en mobile */
   .timeline::before {
-    left: 50%;
-    margin-left: -1px;
+    display: none;
+  }
+
   }
 
   /* Cada item */
@@ -11434,6 +11435,7 @@ header.masthead .masthead-heading {
     line-height: 1.4;
   }
 }
+
 
 
   
