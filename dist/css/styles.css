@@ -11383,16 +11383,16 @@ header.masthead .masthead-heading {
   padding-left: 0;
   padding-right: 0;
 }
+
 /* ============================= */
 /* TIMELINE MOBILE FIX CORRECTO */
+/* (SIN LINEA EN MOBILE)        */
 /* ============================= */
 @media (max-width: 768px) {
 
-  /* OCULTAR línea vertical del timeline en mobile */
+  /* Quitar línea vertical en mobile */
   .timeline::before {
     display: none;
-  }
-
   }
 
   /* Cada item */
@@ -11401,20 +11401,22 @@ header.masthead .masthead-heading {
     margin-bottom: 40px;
   }
 
-  /* Icono centrado sobre la línea */
+  /* Icono centrado */
   .timeline > li .timeline-image {
+    position: relative;
     left: 50%;
     margin-left: -50px;
     width: 100px;
     height: 100px;
   }
 
-  /* Panel ocupa todo el ancho */
+  /* Panel debajo del icono */
   .timeline > li .timeline-panel {
+    position: relative;
     float: none;
     width: 100%;
     padding: 20px 15px;
-    margin-top: 120px;
+    margin-top: 15px;
     text-align: center;
   }
 
@@ -11424,7 +11426,7 @@ header.masthead .masthead-heading {
     text-align: center;
   }
 
-  /* Tipografía ajustada */
+  /* Ajustes de texto */
   .timeline-heading h4 {
     font-size: 1.1rem;
     margin-bottom: 5px;
@@ -11435,7 +11437,3 @@ header.masthead .masthead-heading {
     line-height: 1.4;
   }
 }
-
-
-
-  
