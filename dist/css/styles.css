@@ -11384,5 +11384,56 @@ header.masthead .masthead-heading {
   padding-right: 0;
 }
 
+/* ============================= */
+/* FIX TIMELINE MOBILE ONLY */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* Elimina posiciones absolutas */
+  .timeline > li {
+    margin-bottom: 40px;
+  }
+
+  .timeline > li .timeline-panel {
+    position: relative;
+    float: none;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  /* Imagen centrada arriba */
+  .timeline > li .timeline-image {
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  /* Quita inversión en mobile */
+  .timeline > li.timeline-inverted .timeline-panel {
+    float: none;
+  }
+
+  /* Títulos centrados */
+  .timeline-heading h4 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+
+  /* Texto centrado */
+  .timeline-body p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* Quita línea vertical en mobile */
+  .timeline::before {
+    left: 50%;
+    display: none;
+  }
+}
 
   
