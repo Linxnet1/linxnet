@@ -11383,57 +11383,57 @@ header.masthead .masthead-heading {
   padding-left: 0;
   padding-right: 0;
 }
-
 /* ============================= */
-/* FIX TIMELINE MOBILE ONLY */
+/* TIMELINE MOBILE FIX CORRECTO */
 /* ============================= */
 @media (max-width: 768px) {
 
-  /* Elimina posiciones absolutas */
+  /* Mantener la línea centrada */
+  .timeline::before {
+    left: 50%;
+    margin-left: -1px;
+  }
+
+  /* Cada item */
   .timeline > li {
+    min-height: 170px;
     margin-bottom: 40px;
   }
 
-  .timeline > li .timeline-panel {
-    position: relative;
-    float: none;
-    width: 100%;
-    padding: 15px 20px;
-    text-align: center;
-  }
-
-  /* Imagen centrada arriba */
+  /* Icono centrado sobre la línea */
   .timeline > li .timeline-image {
-    position: relative;
     left: 50%;
     margin-left: -50px;
     width: 100px;
     height: 100px;
-    margin-bottom: 15px;
   }
 
-  /* Quita inversión en mobile */
+  /* Panel ocupa todo el ancho */
+  .timeline > li .timeline-panel {
+    float: none;
+    width: 100%;
+    padding: 20px 15px;
+    margin-top: 120px;
+    text-align: center;
+  }
+
+  /* Ignorar invertidos en mobile */
   .timeline > li.timeline-inverted .timeline-panel {
     float: none;
+    text-align: center;
   }
 
-  /* Títulos centrados */
+  /* Tipografía ajustada */
   .timeline-heading h4 {
     font-size: 1.1rem;
-    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
-  /* Texto centrado */
   .timeline-body p {
     font-size: 0.95rem;
     line-height: 1.4;
   }
-
-  /* Quita línea vertical en mobile */
-  .timeline::before {
-    left: 50%;
-    display: none;
-  }
 }
+
 
   
